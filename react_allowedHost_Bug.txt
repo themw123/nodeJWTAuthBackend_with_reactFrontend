@@ -1,0 +1,21 @@
+Bug tritt auf wenn man eine öffentliche ip hat die nicht hinter Nat ist.
+https://github.com/facebook/create-react-app/issues/12304
+
+in MEINPROJEKT/node_modules/react-scripts/config/webpackDevServer.config.js
+
+
+hinzufügen bzw ändern:
+module.exports = function (proxy, allowedHost) {
+  //const disableFirewall =
+  //  !proxy || process.env.DANGEROUSLY_DISABLE_HOST_CHECK === 'true';
+  let allowedHosts;
+  if(!proxy || process.env.DANGEROUSSLY_DISABLE_HOST_CHECK === 'true') {
+    allowedHosts = 'all';
+  }else if (allowedHost != null) {
+    allowedHosts = [allowedHost];
+  }
+  return {
+
+
+löschen:
+allowedHosts: disableFirewall ? 'all' : [allowedHost],
