@@ -22,9 +22,8 @@ import auth from "./components/auth";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faXmark, faBars);
+import { faXmark, faBars, faHouse } from "@fortawesome/free-solid-svg-icons";
+library.add(faXmark, faBars, faHouse);
 
 function App() {
   const authx = auth();
@@ -56,7 +55,11 @@ function App() {
         <Navbar className="myNavbar" sticky="top" bg="light" expand="lg">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">
-              MarvCompany
+              <FontAwesomeIcon
+                size="md"
+                icon={faHouse}
+                style={{ color: "#4d4b46" }}
+              />
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="navbarScroll"
