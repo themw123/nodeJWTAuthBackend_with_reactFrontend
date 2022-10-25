@@ -53,7 +53,7 @@ function App() {
   return (
     <OnChangeRoute loggedIn={loggedIn} doLogout={doLogout}>
       <div style={{ height: "100%", width: "100%" }}>
-        <Navbar sticky="top" bg="light" expand="lg">
+        <Navbar className="myNavbar" sticky="top" bg="light" expand="lg">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">
               MarvCompany
