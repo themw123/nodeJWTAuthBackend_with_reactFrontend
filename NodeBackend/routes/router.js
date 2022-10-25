@@ -9,6 +9,22 @@ const dbPlatinendb = require("../lib/dbPlatinendb.js");
 const userMiddleware = require("../middleware/users.js");
 
 router.post("/login", (req, res, next) => {
+  //empty
+  var t = req.body.username;
+  var l = req.body.password;
+  var x = "";
+  if (
+    req.body.username == undefined ||
+    req.body.username == "" ||
+    req.body.password == undefined ||
+    req.body.password == ""
+  ) {
+    //throw err;
+    return res.status(401).send({
+      msg: "Please specify a username and password.",
+    });
+  }
+
   dbLogin.query(
     `SELECT * FROM users WHERE user_name = ${dbLogin.escape(
       req.body.username

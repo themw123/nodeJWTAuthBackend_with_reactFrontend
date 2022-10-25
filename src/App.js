@@ -55,11 +55,7 @@ function App() {
         <Navbar className="myNavbar" sticky="top" bg="light" expand="lg">
           <Container fluid>
             <Navbar.Brand as={Link} to="/">
-              <FontAwesomeIcon
-                size="md"
-                icon={faHouse}
-                style={{ color: "#4d4b46" }}
-              />
+              <FontAwesomeIcon icon={faHouse} style={{ color: "#4d4b46" }} />
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="navbarScroll"
