@@ -1,3 +1,3 @@
-# Run both: React Frontend and Node Backend with:
+Run both: React Frontend and Node Backend with:
 
-## npm run start
+npm run start
