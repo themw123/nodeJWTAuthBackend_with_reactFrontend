@@ -10,9 +10,6 @@ const userMiddleware = require("../middleware/users.js");
 
 router.post("/login", (req, res, next) => {
   //empty
-  var t = req.body.username;
-  var l = req.body.password;
-  var x = "";
   if (
     req.body.username == undefined ||
     req.body.username == "" ||
