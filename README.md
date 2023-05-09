@@ -1,12 +1,14 @@
 
 Dies ist ein Projekt, indem ich einen Nodejs Server als Backend Lösung im Zusammenspiel mit einer React Frontend Anbindung ausprobiert habe. Zudem verwende ich JWT Token für den Login Prozess.
 
+Login:
+![Alt text](/img/login.png)
 
-![Alt text](/img/login.png "login")
+Eingeloggt:
+![Alt text](/img/loggedin.png)
 
-![Alt text](/img/loggedin.png "loggedin")
-
-![Alt text](/img/platinen.png "Backend abfragen")
+Backend abfragen:
+![Alt text](/img/platinen.png)
 
 
 Erstelle die Datenbank und den Benutzter mittels der .sql Datei.
