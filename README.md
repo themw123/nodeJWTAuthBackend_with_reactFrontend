@@ -1,17 +1,16 @@
-Run both: React Frontend and Node Backend with:
+Starte beides, React Frontend und Node Backend mit:
 
 npm run start
 
-Attention! Create a mysql database as expected and set it up in NodeBackend/lib
-Otherwise the node server will crash.
+Achtung! Erstelle eine Mysql Datenbank wie sie erwartet wird in NodeBackend/lib. Ansonnsten wird der node server abstürtzen.
 
-example:
-const mysql = require("mysql");
-const connection = mysql.createConnection({
-  host: "localhost",
-  user: "user",
-  database: "login",
-  password: "123456",
-});
-connection.connect();
-module.exports = connection;
+Beispiel:
+const mysql = require("mysql");  
+const connection = mysql.createConnection({  
+  host: "localhost",  
+  user: "user",  
+  database: "login",  
+  password: "123456",  
+});  
+connection.connect();  
+module.exports = connection;  
