@@ -11,8 +11,7 @@ Backend abfragen:
 ![Alt text](/img/platinen.png)
 
 
-Erstelle die Datenbank und den Benutzter mittels der .sql Datei.
-Ansonnsten wird der node server abstürtzen.
+Es wird eine Mysql Datenbank für das Backend genutzt.
 
 react-script update evt nötig und installation von concurrently:
 ```  
@@ -21,7 +20,7 @@ npm install --save react-scripts@latest
 npm install concurrently --save-dev
 ```
 
-Starte beides, React Frontend und Node Backend mit:
+Starte beide, React Frontend und Node Backend mit:
 ```  
 npm start
 ```
