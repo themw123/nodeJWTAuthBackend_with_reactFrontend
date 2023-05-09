@@ -8,10 +8,10 @@ Beispiel:
 ```  
 const mysql = require("mysql");  
 const connection = mysql.createConnection({  
-host: "localhost",  
-user: "user",  
-database: "login",  
-password: "123456",  
+  host: "localhost",  
+  user: "user",  
+  database: "login",  
+  password: "123456",  
 });  
 connection.connect();  
 module.exports = connection;  
